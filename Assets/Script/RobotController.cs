@@ -7,7 +7,7 @@ public class RobotController : MonoBehaviour
     Rigidbody2D robot;
     Animator animator;
     float walkSpeed = 10.0f;
-    float maxSpeed = 3.0f;
+    float maxSpeed = 6.0f;
     public float jumpPower = 5.0f;
     bool isjumping = false;
     // Start is called before the first frame update

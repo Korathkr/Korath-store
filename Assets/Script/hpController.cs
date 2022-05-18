@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class hpController : MonoBehaviour
 {
 
     GameObject hp;
+    GameObject shield;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,10 +18,16 @@ public class hpController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        GameOver();
     }
+    public void GameOver(){
+        if(hp.GetComponent<Image>().fillAmount <= 0){
+            SceneManager.LoadScene("GameOver");
+        }
+    }
+    
 
     public void HpControl(){
-        hp.GetComponent<Image>().fillAmount -= 0.05f;
+        hp.GetComponent<Image>().fillAmount -= 0.25f;
     }
 }

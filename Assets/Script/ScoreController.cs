@@ -7,7 +7,7 @@ public class ScoreController : MonoBehaviour
 {
 
     Text score;
-    public int scoresum;
+    public static int scoresum;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,8 +26,10 @@ public class ScoreController : MonoBehaviour
         score.text = "Score : " + (int) scoresum;
     }
 
+    //충돌 시 스코어 0점
     public void Doge(){
         scoresum = 0;
+        score.text = "Score : " + (int) scoresum;
     }
 }
 

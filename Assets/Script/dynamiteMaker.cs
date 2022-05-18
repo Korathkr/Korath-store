@@ -24,7 +24,7 @@ public class dynamiteMaker : MonoBehaviour
             GameObject dynamite = Instantiate(dmPrefab);
 
             //x좌표 난수로 반복
-            int x = Random.Range(-8, 9);
+            float x = Random.Range(-8.5f, 8.5f);
 
             //랜덤한 x좌표에서 생성
             dynamite.transform.position = new Vector3(x, 6, 0);

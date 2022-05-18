@@ -5,7 +5,7 @@ using UnityEngine;
 public class CoinMaker : MonoBehaviour
 {   
     public GameObject CoinPrefab;
-    float interval = 1.0f;
+    float interval = 1.2f;
     float delta = 0; 
 
     // Start is called before the first frame update
